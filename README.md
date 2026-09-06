@@ -15,24 +15,6 @@ A full-stack web application built for sending bulk emails efficiently. Users ca
 - **Responsive & Clean UI**: Simple, student-friendly blue interface designed for laptops and mobile devices.
 
 ---
-
-## 🖼️ Application Screenshots & Database Logs
-
-### 1. Send Mail Interface (CSV Upload & Form)
-![Send Mail Interface](screenshots/send-mail.png)
-
----
-
-### 2. Mail History & Campaign Status View
-![Mail History View](screenshots/mail-history.png)
-
----
-
-### 3. MongoDB Atlas Document Storage
-![MongoDB Atlas Log](screenshots/mongodb-atlas.png)
-
----
-
 ## 🛠️ Tech Stack
 
 - **Frontend**: React (Vite), Vanilla CSS
