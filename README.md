@@ -18,10 +18,13 @@ A full-stack web application built for sending bulk emails efficiently. Users ca
 
 ## 🖼️ Application Screenshots & Database Logs
 
-### Mail History & Sent Campaign View
+### 1. Send Mail Interface (CSV Upload & Composition)
+![Send Mail Interface](screenshots/send-mail.png)
+
+### 2. Mail History & Campaign Status View
 ![Mail History View](screenshots/mail-history.png)
 
-### MongoDB Atlas Document Storage
+### 3. MongoDB Atlas Document Storage
 ![MongoDB Atlas Log](screenshots/mongodb-atlas.png)
 
 ---
@@ -56,6 +59,7 @@ w-13/
 │   ├── vite.config.js
 │   └── package.json
 ├── screenshots/
+│   ├── send-mail.png       # Send Mail tab UI preview
 │   ├── mail-history.png    # Mail History tab UI preview
 │   └── mongodb-atlas.png   # MongoDB Atlas database records preview
 ├── .env.example
