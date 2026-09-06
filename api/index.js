@@ -4,7 +4,7 @@ import dotenv from 'dotenv'
 import nodemailer from 'nodemailer'
 import mongoose from 'mongoose'
 import dns from 'dns'
-import Mail from '../backend/models/Mail.js'
+import Mail from './models/Mail.js'
 
 try {
   dns.setServers(['8.8.8.8', '8.8.4.4'])
