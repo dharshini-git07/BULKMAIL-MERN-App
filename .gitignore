@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+
+# Build outputs & caches
+dist/
+build/
+.vite/
+coverage/
+
+# OS metadata & Logs
+.DS_Store
+Thumbs.db
+*.log
