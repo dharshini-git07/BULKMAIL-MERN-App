@@ -1,7 +1,6 @@
 import { useState, useRef, useEffect } from 'react'
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-const API_URL = import.meta.env.VITE_API_URL !== undefined ? import.meta.env.VITE_API_URL : (import.meta.env.DEV ? 'http://localhost:5000' : '')
 
 export default function App() {
   const [tab, setTab] = useState('send')
@@ -25,7 +24,7 @@ export default function App() {
     setHistoryLoading(true)
     setHistoryErr('')
     try {
-      const res = await fetch(`${API_URL}/api/mail-history`)
+      const res = await fetch('/api/mail-history')
       if (!res.ok) throw new Error('Failed to fetch history')
       const data = await res.json()
       setHistory(data)
@@ -114,7 +113,7 @@ export default function App() {
     setLoading(true)
 
     try {
-      const res = await fetch(`${API_URL}/api/send-mail`, {
+      const res = await fetch('/api/send-mail', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

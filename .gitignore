@@ -1,6 +1,8 @@
 # Dependencies
 node_modules/
+**/node_modules/
 package-lock.json
+**/package-lock.json
 
 # Environment variables & secrets
 .env
@@ -9,10 +11,11 @@ package-lock.json
 
 # Build outputs & caches
 dist/
+**/dist/
 build/
 .vite/
+**/.vite/
 coverage/
-
 
 # OS metadata & Logs
 .DS_Store
